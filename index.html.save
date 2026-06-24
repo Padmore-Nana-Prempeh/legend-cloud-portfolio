@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legend Cloud Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 80px;
+        }
+        .card {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 16px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #38bdf8;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        .tag {
+            display: inline-block;
+            background: #334155;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Padmore Nana Prempeh</h1>
+        <p>PhD Researcher | Machine Learning | Biostatistics | Cloud Engineering</p>
+
+        <h2>Legend Cloud Portfolio</h2>
+        <p>
+            This project demonstrates a highly available AWS web application using
+            EC2, Application Load Balancer, Auto Scaling Group, Target Groups,
+            Health Checks, and CloudWatch.
+        </p>
+
+        <div>
+            <span class="tag">AWS</span>
+            <span class="tag">EC2</span>
+            <span class="tag">ALB</span>
+            <span class="tag">Auto Scaling</span>
+            <span class="tag">CloudWatch</span>
+        </div>
+    </div>
+</body>
+</html>
+
