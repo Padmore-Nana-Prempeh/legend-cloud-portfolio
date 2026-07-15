@@ -24,6 +24,35 @@ Rather than focusing solely on analytics, SentinelLake illustrates how modern cl
 
 ---
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Business Problem](#business-problem)
+- [Solution Architecture](#solution-architecture)
+- [Architecture Overview](#architecture-overview)
+- [AWS Services Used](#aws-services-used)
+- [Project Workflow](#project-workflow)
+- [Folder Structure](#folder-structure)
+- [Dataset Description](#dataset-description)
+
+- [Step-by-Step Implementation](#step-by-step-implementation)
+  - [Phase 1 – Secure Data Lake Foundation](#phase-1--secure-data-lake-foundation)
+  - [Phase 2 – Metadata Discovery](#phase-2--metadata-discovery)
+  - [Phase 3 – Serverless SQL Analytics](#phase-3--serverless-sql-analytics)
+  - [Phase 4 – Monitoring and Operational Visibility](#phase-4--monitoring-and-operational-visibility)
+  - [Phase 5 – Audit Logging and Event Tracking](#phase-5--audit-logging-and-event-tracking)
+  - [Phase 6 – Event-Driven Security Notifications](#phase-6--event-driven-security-notifications)
+
+- [Security Features](#security-features)
+- [Monitoring Features](#monitoring-features)
+- [Event-Driven Automation](#event-driven-automation)
+- [Project Outcomes](#project-outcomes)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
+- [License](#license)
+---
+
 #  Business Problem
 
 Healthcare organizations generate large volumes of structured patient data that must be stored securely, queried efficiently, and continuously monitored. Traditional on-premises data warehouses often require significant infrastructure management while providing limited automation for monitoring and auditing.
@@ -626,7 +655,7 @@ The SentinelLake platform incorporates multiple AWS security services and best p
 
 ---
 
-# 📈 Monitoring Features
+#  Monitoring Features
 
 Amazon CloudWatch was implemented to provide operational visibility into the SentinelLake environment.
 
@@ -705,7 +734,7 @@ Key achievements include:
 
 The project showcases how multiple AWS services can be integrated into a production-style data lake architecture while following cloud-native best practices.
 
-# 💡 Skills Demonstrated
+#  Skills Demonstrated
 
 This project demonstrates practical experience across multiple AWS services and cloud engineering concepts.
 
