@@ -1,0 +1,114 @@
+# ============================================================
+# MERIT Project
+# Git Ignore Rules
+# ============================================================
+
+# ------------------------------------------------------------
+# Environment variables and secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+
+secrets.json
+credentials.json
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+.venv/
+venv/
+env/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ------------------------------------------------------------
+# Jupyter
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# Machine Learning artifacts
+# ------------------------------------------------------------
+ml/data/raw/
+ml/data/processed/
+ml/checkpoints/
+ml/models/
+
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# ------------------------------------------------------------
+# Node / Next.js
+# ------------------------------------------------------------
+node_modules/
+.next/
+out/
+dist/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------------------------------------
+# AWS CDK
+# ------------------------------------------------------------
+cdk.out/
+
+# Review before committing CDK context
+cdk.context.json
+
+# CloudFormation generated templates
+*.template.json
+
+# ------------------------------------------------------------
+# Local logs and temporary files
+# ------------------------------------------------------------
+logs/
+tmp/
+temp/
+
+*.log
+
+# ------------------------------------------------------------
+# IDEs
+# ------------------------------------------------------------
+.vscode/
+.idea/
+
+# ------------------------------------------------------------
+# macOS
+# ------------------------------------------------------------
+.DS_Store
+
+# ------------------------------------------------------------
+# Terraform - in case ever introduced
+# ------------------------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# ------------------------------------------------------------
+# MERIT local feasibility corpus
+# ------------------------------------------------------------
+ml/data/feasibility/documents/
+ml/data/feasibility/extracted/
+ml/data/feasibility/cleaned/
+ml/data/feasibility/chunks/
+ml/data/feasibility/bm25_candidates.jsonl
+ml/data/feasibility/relevance_annotations.jsonl

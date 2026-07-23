@@ -1,0 +1,40 @@
+project:
+  name: MERIT
+  experiment: local_ml_feasibility_spike
+  seed: 42
+
+data:
+  relevance_labels:
+    not_relevant: 0
+    partially_relevant: 1
+    highly_relevant: 2
+
+retrieval:
+  candidate_k: 12
+  final_k: 5
+
+baselines:
+  tfidf:
+    enabled: true
+
+  bm25:
+    enabled: true
+
+  embedding:
+    enabled: true
+
+reranker:
+  enabled: true
+  architecture: cross_encoder
+  max_length: 512
+
+evaluation:
+  metrics:
+    - precision_at_k
+    - recall_at_k
+    - reciprocal_rank
+    - ndcg_at_k
+
+latency:
+  measure_retrieval: true
+  measure_reranking: true

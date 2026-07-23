@@ -1,0 +1,20 @@
+{"query_id":"q001","query":"What significant periodic components were identified in US COVID-19 mortality?"}
+{"query_id":"q002","query":"Which method produced narrower confidence intervals than the alternative bootstrap approach?"}
+{"query_id":"q003","query":"What is the main purpose of the Variable Bandpass Periodic Block Bootstrap?"}
+{"query_id":"q004","query":"What limitations of the VBPBB method were discussed?"}
+{"query_id":"q005","query":"What data were used to study US COVID-19 mortality patterns?"}
+{"query_id":"q006","query":"What statistical software was used for the COVID-19 mortality analysis?"}
+{"query_id":"q007","query":"What periodic patterns were found in the PM2.5 study?"}
+{"query_id":"q008","query":"What topics are covered in HSTA 566 Analysis of Categorical Data?"}
+{"query_id":"q009","query":"How many hours per week should students dedicate to HSTA 566?"}
+{"query_id":"q010","query":"What is the purpose of block bootstrapping for time series data?"}
+{"query_id": "q011", "query": "What date range was used for the US COVID-19 mortality time series?"}
+{"query_id": "q012", "query": "How did VBPBB confidence intervals compare with PBB confidence intervals?"}
+{"query_id": "q013", "query": "When did the seasonal COVID-19 mortality component reach its highest level?"}
+{"query_id": "q014", "query": "What seasonal pattern was observed in PM2.5 concentrations during the semi-annual analysis?"}
+{"query_id": "q015", "query": "How did PM2.5 concentrations differ between weekdays and weekends?"}
+{"query_id": "q016", "query": "How many observations and years of data were included in the PM2.5 study?"}
+{"query_id": "q017", "query": "What prerequisites are required for HSTA 566 Analysis of Categorical Data?"}
+{"query_id": "q018", "query": "What statistical software is taught and supported in HSTA 566?"}
+{"query_id": "q019", "query": "How many credit hours is HSTA 566 and how is the course delivered?"}
+{"query_id": "q020", "query": "Which R date-time format code represents the year with century?"}

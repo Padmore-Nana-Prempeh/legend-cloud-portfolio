@@ -1,0 +1,4 @@
+{"query_id":"q001","query":"What limitations did the study report?","document_id":"doc001","chunk_id":"doc001-page8-chunk1","passage":"The primary limitation of the study was the relatively small sample size.","relevance":2}
+{"query_id":"q001","query":"What limitations did the study report?","document_id":"doc001","chunk_id":"doc001-page2-chunk1","passage":"Participants were recruited between January and June.","relevance":0}
+{"query_id":"q002","query":"What statistical model was used?","document_id":"doc001","chunk_id":"doc001-page5-chunk2","passage":"Multivariable logistic regression was used to estimate adjusted odds ratios.","relevance":2}
+{"query_id":"q002","query":"What statistical model was used?","document_id":"doc001","chunk_id":"doc001-page1-chunk1","passage":"The study investigated maternal health outcomes.","relevance":0}
