@@ -166,3 +166,83 @@ def test_cost_anomaly_subscription_created():
             "Threshold": 5,
         },
     )
+
+def test_cognito_user_pool_created():
+    template = create_template()
+
+    template.resource_count_is("AWS::Cognito::UserPool", 1)
+
+    template.has_resource_properties(
+        "AWS::Cognito::UserPool",
+        {
+            "AutoVerifiedAttributes": ["email"],
+            "UsernameAttributes": ["email"],
+        },
+    )
+
+def test_cognito_user_pool_client_created():
+    template = create_template()
+
+    template.resource_count_is("AWS::Cognito::UserPoolClient", 1)
+
+    template.has_resource_properties(
+        "AWS::Cognito::UserPoolClient",
+        {
+            "GenerateSecret": False,
+        },
+    )
+
+def test_api_gateway_rest_api_created():
+    template = create_template()
+
+    template.resource_count_is("AWS::ApiGateway::RestApi", 1)
+
+def test_cognito_api_authorizer_created():
+    template = create_template()
+
+    template.resource_count_is("AWS::ApiGateway::Authorizer", 1)
+
+    template.has_resource_properties(
+        "AWS::ApiGateway::Authorizer",
+        {
+            "Type": "COGNITO_USER_POOLS",
+        },
+    )
+
+
+def test_auth_test_route_requires_cognito():
+    template = create_template()
+
+    template.has_resource_properties(
+        "AWS::ApiGateway::Method",
+        {
+            "HttpMethod": "GET",
+            "AuthorizationType": "COGNITO_USER_POOLS",
+        },
+    )
+
+def test_cloudfront_distribution_created():
+    template = create_template()
+
+    template.resource_count_is("AWS::CloudFront::Distribution", 1)
+
+def test_cloudfront_security_headers_policy_created():
+    template = create_template()
+
+    template.resource_count_is(
+        "AWS::CloudFront::ResponseHeadersPolicy",
+        1,
+    )
+
+def test_cloudfront_waf_web_acl_created():
+    template = create_template()
+
+    template.resource_count_is("AWS::WAFv2::WebACL", 1)
+
+def test_frontend_bucket_deployment_created():
+    template = create_template()
+
+    template.resource_count_is(
+        "Custom::CDKBucketDeployment",
+        1,
+    )
